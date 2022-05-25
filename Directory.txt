@@ -1,0 +1,15 @@
+
+Personal Blog Website
+-index.html
+- pages
+   -Blog1.html
+   -Blog2.html
+   -Blog3.html
+   -TableofContents.html
+
+-css
+  -Blog1.css
+  -Blog2.css
+  -Blog3.css
+  -index.css
+  -TableofContents.css
