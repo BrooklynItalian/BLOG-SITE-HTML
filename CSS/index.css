@@ -1,0 +1,128 @@
+@import url("TableofContents.css");
+@import url("Blog1.css");
+@import url("Blog2.css");
+@import url("Blog3.css");
+
+.container{
+  display:grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 250px 500px 300px 300px 200px;
+  grid-template-areas:
+  "hd"
+  "np"
+  "sp"
+  "tp"
+  "ft";
+}
+
+.nestedGrid{
+  display: grid;
+  grid-template-rows: 100px 100px 50px;
+  grid-template-columns: 300px;
+border: 10px solid blue;
+  grid-gap:5px;
+}
+.nestBox{
+  display:flex;
+  background: green;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  border: 4px solid #ca84f0;
+  background: #41d5f2;
+}
+.header{
+  grid-area:hd;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  grid-area: ft;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+}
+.newpost{
+  grid-area: np;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img{
+  max-width: 100%;
+}
+#table{
+  font-size: 20px;
+}
+.content1{
+  grid-area: sp;
+}
+.content2{
+  grid-area: tp;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.cont{
+  padding: 2px 16px;
+}
+h1{
+  text-decoration: underline;
+  color: purple;
+  font-family: fantasy;
+}
+h2{
+  text-decoration: underline;
+  color: #72219e;
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: 30px;
+}
+h3{
+  color: #ab53db;
+  font-size: 25px;
+  font-weight: bold;
+}
+h4{
+  color: #ab53db;
+  font-size: 30px;
+}
+p{
+  font-family: monospace;
+}
+button{
+  border: 5px dotted lavender;
+  color: purple;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: left;
+}
+blockquote{
+  background-color: #a7dfe8;
+  font-size: 15px;
+  font-style: italic;
+}
+
+@media(min-width:900px){
+.container{
+  display:grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 250px 300px 300px 300px;
+  grid-template-areas:
+  "hd hd hd hd hd hd hd hd"
+  "np np sp sp sp sp sp sp"
+  "np np tp tp tp tp tp tp"
+  "ft ft ft ft ft ft ft ft";
+}
+}
